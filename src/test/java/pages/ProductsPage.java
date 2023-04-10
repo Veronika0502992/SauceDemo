@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -17,6 +18,7 @@ public class ProductsPage extends BasePage {
         super(driver);
     }
 
+    @Step("Открытие страницы товаров")
     public void open() {
         driver.get(BASE_URL + "/inventory.html");
     }
@@ -25,6 +27,7 @@ public class ProductsPage extends BasePage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(TITLE)).getText();
     }
 
+    @Step("Добавление товара в корзину")
     public void addToCart(String product) {
 
         By addToCartLocator = By.xpath(String.format(addToCartXpath, product));
@@ -32,6 +35,7 @@ public class ProductsPage extends BasePage {
 
     }
 
+    @Step("Переход на страницу корзины")
     public void openCart() {
 
         driver.findElement(CART).click();
