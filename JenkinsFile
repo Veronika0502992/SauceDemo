@@ -6,11 +6,17 @@ pipeline {
         maven "M3"
     }
 
+    parameters {
+        gitParameter branchFilter: 'origin/(.*)', defaultValue: 'master', name: 'BRANCH', type: 'PT_BRANCH'
+}
+
+
     stages {
         stage('GIT clone') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/Veronika0502992/SauceDemo.git'
+                git branch: "${params.BRANCH}", url: 'https://github.com/Veronika0502992/SauceDemo.git'
+
 
 
             }
