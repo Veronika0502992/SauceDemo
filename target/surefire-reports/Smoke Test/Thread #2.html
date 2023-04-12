@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>TestNG:  Thread #2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Thread #2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 21 21:20:25 MSK 2023</td>
+</tr>
+<tr><td>Total time:</td><td>24 seconds (24411 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.CartPageTest.cartPageWorks()'><b>cartPageWorks</b><br>Test class: tests.CartPageTest<br>Test method: Check the presence of goods in the cart and the possibility of deleting goods from the cart</td>
+<td></td>
+<td>9</td>
+<td>tests.CartPageTest@69ce2f62</td></tr>
+<tr>
+<td title='tests.CheckoutPageTest.checkoutPageWorks()'><b>checkoutPageWorks</b><br>Test class: tests.CheckoutPageTest<br>Test method: Check if the user can enter data for the purchase of goods</td>
+<td></td>
+<td>10</td>
+<td>tests.CheckoutPageTest@6ad5923a</td></tr>
+<tr>
+<td title='tests.FinishPageTest.finishPageWorks()'><b>finishPageWorks</b><br>Test class: tests.FinishPageTest<br>Test method: Check that the payment page is working</td>
+<td></td>
+<td>10</td>
+<td>tests.FinishPageTest@4565a70a</td></tr>
+<tr>
+<td title='tests.LoginTest.loginWorks()'><b>loginWorks</b><br>Test class: tests.LoginTest<br>Test method: Check if user can log in</td>
+<td></td>
+<td>8</td>
+<td>tests.LoginTest@779de014</td></tr>
+<tr>
+<td title='tests.CheckoutPageTest.negativeCheckout()'><b>negativeCheckout</b><br>Test class: tests.CheckoutPageTest<br>Test method: Negative checkout<br>Parameters: , , , Error: First Name is required</td>
+<td></td>
+<td>2</td>
+<td>tests.CheckoutPageTest@6ad5923a</td></tr>
+<tr>
+<td title='tests.CheckoutPageTest.negativeCheckout()'><b>negativeCheckout</b><br>Test class: tests.CheckoutPageTest<br>Test method: Negative checkout<br>Parameters: ppp, , ppp, Error: Last Name is required</td>
+<td></td>
+<td>2</td>
+<td>tests.CheckoutPageTest@6ad5923a</td></tr>
+<tr>
+<td title='tests.CheckoutPageTest.negativeCheckout()'><b>negativeCheckout</b><br>Test class: tests.CheckoutPageTest<br>Test method: Negative checkout<br>Parameters: ppp, ppp, , Error: Postal Code is required</td>
+<td></td>
+<td>2</td>
+<td>tests.CheckoutPageTest@6ad5923a</td></tr>
+<tr>
+<td title='tests.LoginTest.negativeLogin()'><b>negativeLogin</b><br>Test class: tests.LoginTest<br>Test method: Negative login<br>Parameters: , , Epic sadface: Username is required</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTest@779de014</td></tr>
+<tr>
+<td title='tests.LoginTest.negativeLogin()'><b>negativeLogin</b><br>Test class: tests.LoginTest<br>Test method: Negative login<br>Parameters: p, p, Epic sadface: Username and password do not match any user in this service</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTest@779de014</td></tr>
+<tr>
+<td title='tests.LoginTest.negativeLogin()'><b>negativeLogin</b><br>Test class: tests.LoginTest<br>Test method: Negative login<br>Parameters: standard_user, , Epic sadface: Password is required</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTest@779de014</td></tr>
+<tr>
+<td title='tests.LoginTest.negativeLogin()'><b>negativeLogin</b><br>Test class: tests.LoginTest<br>Test method: Negative login<br>Parameters: , secret_sauce, Epic sadface: Username is required</td>
+<td></td>
+<td>2</td>
+<td>tests.LoginTest@779de014</td></tr>
+<tr>
+<td title='tests.LoginTest.negativeLogin()'><b>negativeLogin</b><br>Test class: tests.LoginTest<br>Test method: Negative login<br>Parameters: locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out.</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTest@779de014</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.productsPageWorks()'><b>productsPageWorks</b><br>Test class: tests.ProductsPageTest<br>Test method: Check adding item to cart</td>
+<td></td>
+<td>4</td>
+<td>tests.ProductsPageTest@726a6b94</td></tr>
+</table><p>
+</body>
+</html>
